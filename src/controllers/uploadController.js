@@ -64,8 +64,7 @@ const processExcel = async (req, res) => {
         const newSchedule = new Schedule({ data: finalResult });
         await newSchedule.save();
 
-        console.log("--- DỮ LIỆU ĐÃ LƯU ATLAS ---");
-        console.log(JSON.stringify(finalResult, null, 2));
+        console.log("--- ĐÃ CẬP NHẬT DỮ LIỆU ---");
 
         res.status(200).json({ message: "Cập nhật thành công", data: finalResult });
     } catch (error) {
