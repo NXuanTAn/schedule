@@ -18,6 +18,6 @@ app.use('/api', uploadRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`🚀 Server đang chạy trên cổng: ${PORT}`);
-    console.log(`👉 API Upload: http://localhost:${PORT}/api/upload-schedule`);
+    console.log(`Server đang chạy`);
+
 });
